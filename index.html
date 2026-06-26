@@ -27,27 +27,24 @@
                         Loading current time...
                     </div>
                     <script>
-                        <span class="fw-bolder text-primary">
-                            
-                            function showTime() {
-                                const timeElement = document.getElementById("time");
-                                const now = new Date();
-                                let hours = now.getHours();
-                                const minutes = now.getMinutes().toString().padStart(2, '0');
-                                const seconds = now.getSeconds().toString().padStart(2, '0');
-                                const ampm = hours >= 12 ? 'PM' : 'AM';
-                                hours = hours % 12;
-                                hours = hours ? hours : 12; // the hour '0' should be '12'
-                                const timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
-                                timeElement.textContent = timeString;
-                            }
-                        
-                            // Update time every second
-                            setInterval(showTime, 1000);
-                        
-                            // Show the time when the page loads
-                            showTime();
-                        </span>
+                        function showTime() {
+                            const timeElement = document.getElementById("time");
+                            const now = new Date();
+                            let hours = now.getHours();
+                            const minutes = now.getMinutes().toString().padStart(2, '0');
+                            const seconds = now.getSeconds().toString().padStart(2, '0');
+                            const ampm = hours >= 12 ? 'PM' : 'AM';
+                            hours = hours % 12;
+                            hours = hours ? hours : 12; // the hour '0' should be '12'
+                            const timeString = hours + ":" + minutes + ":" + seconds + " " + ampm;
+                            timeElement.textContent = timeString;
+                        }
+                    
+                        // Update time every second
+                        setInterval(showTime, 1000);
+                    
+                        // Show the time when the page loads
+                        showTime();
                     </script>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
