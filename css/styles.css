@@ -11635,12 +11635,11 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    height: 127.5vw;
+    height: 85vw;
     width: 60vw;
-    margin-top: 40.1vw;
   }
   .profile .profile-img {
-    height: 171vw;
+    height: 114vw;
     width: auto;
   }
   .profile .dots-1 {
@@ -11662,12 +11661,11 @@ html {
 }
 @media (min-width: 768px) {
   .profile {
-    height: 105vw;
+    height: 70vw;
     width: 50vw;
-    margin-top: 33.3vw;
   }
   .profile .profile-img {
-    height: 141vw;
+    height: 94vw;
     width: auto;
   }
   .profile .dots-1 {
@@ -11689,12 +11687,11 @@ html {
 }
 @media (min-width: 992px) {
   .profile {
-    height: 84vw;
+    height: 56vw;
     width: 40vw;
-    margin-top: 12.8vw;
   }
   .profile .profile-img {
-    height: 99vw;
+    height: 66vw;
     width: auto;
   }
   .profile .dots-1 {
@@ -11716,12 +11713,11 @@ html {
 }
 @media (min-width: 1200px) {
   .profile {
-    height: 73.5vw;
+    height: 49vw;
     width: 35vw;
-    margin-top: 10.2vw;
   }
   .profile .profile-img {
-    height: 85.5vw;
+    height: 57vw;
     width: auto;
   }
   .profile .dots-1 {
