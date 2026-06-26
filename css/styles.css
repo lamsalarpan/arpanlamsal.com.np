@@ -11580,11 +11580,11 @@ html {
 
 .profile {
   position: relative;
-  height: 95vw;
+  height: 106vw;
   width: 75vw;
   border-radius: 5vw;
   margin-top: 5vw;
-  max-height: 50rem;
+  max-height: 56rem;
   max-width: 40rem;
 }
 .profile .profile-img {
@@ -11635,7 +11635,7 @@ html {
 
 @media (min-width: 576px) {
   .profile {
-    height: 76vw;
+    height: 85vw;
     width: 60vw;
   }
   .profile .profile-img {
@@ -11661,7 +11661,7 @@ html {
 }
 @media (min-width: 768px) {
   .profile {
-    height: 63vw;
+    height: 70vw;
     width: 50vw;
   }
   .profile .profile-img {
@@ -11687,7 +11687,7 @@ html {
 }
 @media (min-width: 992px) {
   .profile {
-    height: 50vw;
+    height: 56vw;
     width: 40vw;
   }
   .profile .profile-img {
@@ -11713,7 +11713,7 @@ html {
 }
 @media (min-width: 1200px) {
   .profile {
-    height: 44vw;
+    height: 49vw;
     width: 35vw;
   }
   .profile .profile-img {
