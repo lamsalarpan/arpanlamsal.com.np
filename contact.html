@@ -40,235 +40,129 @@
                     </div>
                 </div>
             </nav>
-            <!-- Page content-->
-<div class="container px-5 my-5">
-
-    <!-- Hero -->
-    <div class="text-center mb-5">
-        <h1 class="display-4 fw-bolder">
-            <span class="text-gradient d-inline">Contact</span>
-        </h1>
-    </div>
-
-    <div class="card border-0 shadow rounded-4 overflow-hidden">
-        <div class="row g-0">
-
-            <!-- Contact Form -->
-            <div class="col-lg-7 p-5">
-
-                <h3 class="fw-bold mb-4">
-                    <i class="bi bi-envelope-fill text-primary me-2"></i>
-                    Send a Message
-                </h3>
-
-                <form id="contactForm"
-                      action="https://api.web3forms.com/submit"
-                      method="POST">
-
-                    <input type="hidden"
-                           name="access_key"
-                           value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
-
-                    <input type="checkbox"
-                           name="botcheck"
-                           class="d-none">
-
-                        <input class="form-control"
-                        id="subject"
-                        name="subject"
-                        type="text"
-                        placeholder="Subject"
-                        required>
-
-                    <div class="form-floating mb-3">
-                        <input class="form-control"
-                               id="name"
-                               name="name"
-                               type="text"
-                               placeholder="Your Name"
-                               required>
-
-                        <label for="name">
-                            Full Name
-                        </label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input class="form-control"
-                               id="email"
-                               name="email"
-                               type="email"
-                               placeholder="name@example.com"
-                               required>
-
-                        <label for="email">
-                            Email Address
-                        </label>
-                    </div>
-
-                    <div class="form-floating mb-3">
-                        <input class="form-control"
-                               id="subject"
-                               name="custom_subject"
-                               type="text"
-                               placeholder="Subject"
-                               required>
-
-                        <label for="subject">
-                            Subject
-                        </label>
-                    </div>
-
-                    <div class="form-floating mb-4">
-                        <textarea class="form-control"
-                                  id="message"
-                                  name="message"
-                                  placeholder="Message"
-                                  style="height:170px"
-                                  required></textarea>
-
-                        <label for="message">
-                            Your Message
-                        </label>
-                    </div>
-
-                    <!-- Success Alert -->
-                    <div class="alert alert-success d-none"
-                         id="successMessage">
-                        <i class="bi bi-check-circle-fill me-2"></i>
-                        Thank you! Your message has been sent successfully.
-                    </div>
-
-                    <!-- Error Alert -->
-                    <div class="alert alert-danger d-none"
-                         id="errorMessage">
-                        <i class="bi bi-exclamation-circle-fill me-2"></i>
-                        Something went wrong. Please try again.
-                    </div>
-
-                    <button class="btn btn-primary btn-lg px-5"
-                            id="submitBtn"
-                            type="submit">
-
-                        <span id="buttonText">
-                            Send Message
-                        </span>
-
-                        <span id="spinner"
-                              class="spinner-border spinner-border-sm ms-2 d-none"
-                              role="status"></span>
-
-                    </button>
-
-                </form>
-
-            </div>
-
-            <!-- Contact Information -->
-            <div class="col-lg-5 bg-light border-start">
-
-                <div class="p-5">
-
-                    <h3 class="fw-bold mb-4">
-                        Contact Information
-                    </h3>
-
-                    <div class="mb-4">
-
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="feature bg-primary text-white rounded-3 me-3">
-                                <i class="bi bi-telephone-fill"></i>
-                            </div>
-
-                            <div>
-                                <h6 class="mb-0">Phone</h6>
-                                <small class="text-muted">
-                                    1111111111
-                                </small>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center mb-3">
-                        <div class="feature bg-primary text-white rounded-3 me-3">
-                            <i class="bi bi-twitter-x"></i>
-                        </div>
-
-                        <div>
-                            <h6 class="mb-0">X (Twitter)</h6>
-                            <small>
-                                <a href="https://x.com/YOUR_USERNAME" target="_blank">
-                                    @YOUR_USERNAME
-                                </a>
-                            </small>
-                        </div>
-                    </div>
-
-                        <div class="d-flex align-items-center mb-3">
-                            <div class="feature bg-primary text-white rounded-3 me-3">
-                                <i class="bi bi-github"></i>
-                            </div>
-
-                            <div>
-                                <h6 class="mb-0">GitHub</h6>
-                                <small>
-                                    <a href="#">
-                                        Your GitHub
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-
-                        <div class="d-flex align-items-center">
-                            <div class="feature bg-primary text-white rounded-3 me-3">
-                                <i class="bi bi-linkedin"></i>
-                            </div>
-
-                            <div>
-                                <h6 class="mb-0">LinkedIn</h6>
-                                <small>
-                                    <a href="#">
-                                        Your LinkedIn
-                                    </a>
-                                </small>
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <hr class="my-4">
-
-                    <h5 class="fw-bold">
-                        Follow Me
-                    </h5>
-
-                    <div class="d-flex gap-3 mt-3">
-
-                        <a class="fs-3 text-primary" href="#">
-                            <i class="bi bi-github"></i>
-                        </a>
-
-                        <a class="fs-3 text-primary" href="#">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-
-                        <a class="fs-3 text-primary" href="#">
-                            <i class="bi bi-facebook"></i>
-                        </a>
-
-                        <a class="fs-3 text-primary" href="#">
-                            <i class="bi bi-instagram"></i>
-                        </a>
-
-                    </div>
-
+            <!-- Page Content-->
+            <div class="container px-5 my-5">
+                <div class="text-center mb-5">
+                    <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Contact</span></h1>
                 </div>
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                        <!-- Education Section-->
+                        <section>
+                            <!-- Experience Card 1-->
+                            <div class="card shadow border-0 rounded-4 mb-5">
+                                <div class="card-body p-5">
+                                    <div class="d-flex align-items-center mb-4">
+                                            <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 me-3"><i class="bi bi-envelope"></i></div>
+                                            <h3 class="fw-bolder mb-0"><span class="text-gradient d-inline">Let's Connect!</span></h3>
+                                    </div>
+                                    <div class="row align-items-center gx-5">
+                                        <div class="col text-center text-lg-start mb-4 mb-lg-0">
+                                            <div class="bg-light p-4 rounded-4">
+                                    <form id="contactForm"
+                                    action="https://api.web3forms.com/submit"
+                                    method="POST">
 
+                                    <input type="hidden"
+                                        name="access_key"
+                                        value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
+
+                                    <input type="checkbox"
+                                        name="botcheck"
+                                        class="d-none">
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control"
+                                            id="name"
+                                            name="name"
+                                            type="text"
+                                            placeholder="Your Name"
+                                            required>
+
+                                        <label for="name">
+                                            Full Name
+                                        </label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control"
+                                            id="email"
+                                            name="email"
+                                            type="email"
+                                            placeholder="name@example.com"
+                                            required>
+
+                                        <label for="email">
+                                            Email Address
+                                        </label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input class="form-control"
+                                            id="subject"
+                                            name="custom_subject"
+                                            type="text"
+                                            placeholder="Subject"
+                                            required>
+
+                                        <label for="subject">
+                                            Subject
+                                        </label>
+                                    </div>
+
+                                    <div class="form-floating mb-4">
+                                        <textarea class="form-control"
+                                                id="message"
+                                                name="message"
+                                                placeholder="Message"
+                                                style="height:170px"
+                                                required></textarea>
+
+                                        <label for="message">
+                                            Your Message
+                                        </label>
+                                    </div>
+
+                                    <!-- Success Alert -->
+                                    <div class="alert alert-success d-none"
+                                        id="successMessage">
+                                        <i class="bi bi-check-circle-fill me-2"></i>
+                                        Thank you! Your message has been sent successfully.
+                                    </div>
+
+                                    <!-- Error Alert -->
+                                    <div class="alert alert-danger d-none"
+                                        id="errorMessage">
+                                        <i class="bi bi-exclamation-circle-fill me-2"></i>
+                                        Something went wrong. Please try again.
+                                    </div>
+                                    <center>
+                                    <button class="btn btn-primary btn-lg px-5 center-content-center"
+                                            id="submitBtn"
+                                            type="submit">
+                                        <span id="buttonText">
+                                            Send Message
+                                        </span>
+                                        </center>
+                                        <span id="spinner"
+                                            class="spinner-border spinner-border-sm ms-2 d-none"
+                                            role="status"></span>
+
+                                    </button>
+                                    </center>
+
+                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+                    </div>
+                </div>
             </div>
-
-        </div>
-    </div>
-</div>
-<script>
+        </main>
+        <script>
 document.addEventListener("DOMContentLoaded", () => {
 
     const form = document.getElementById("contactForm");
@@ -322,7 +216,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 </script>
-<!-- Footer-->
+         <!-- Footer-->
 <footer class="bg-white py-4 mt-auto border-top">
     <div class="container px-5">
         <div class="row align-items-center justify-content-between">
@@ -356,6 +250,5 @@ document.addEventListener("DOMContentLoaded", () => {
 <script>
 document.getElementById("year").textContent = new Date().getFullYear();
 </script>
-
 </body>
 </html>
