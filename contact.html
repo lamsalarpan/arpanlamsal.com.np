@@ -35,7 +35,7 @@
                             <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                             <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
                             <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                            
+                            <li class="nav-item"><a class="nav-link" href="socialmedia.html">Social media</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,129 +46,123 @@
     <!-- Hero -->
     <div class="text-center mb-5">
         <h1 class="display-4 fw-bolder">
-            <span class="text-gradient d-inline">Let's Connect</span>
+            <span class="text-gradient d-inline">Contact</span>
         </h1>
-        <p class="lead fw-normal text-muted mt-3">
-            Have a question, an opportunity, or simply want to say hello?
-            I'd love to hear from you. Fill out the form below and I'll get back
-            to you as soon as possible.
-        </p>
     </div>
 
     <div class="card border-0 shadow rounded-4 overflow-hidden">
         <div class="row g-0">
-         <section>        
-                <!-- Contact Form -->
-                <div class="col-lg-7 p-5">
 
-                    <h3 class="fw-bold mb-4">
-                        <i class="bi bi-envelope-fill text-primary me-2"></i>
-                        Send a Message
-                    </h3>
+            <!-- Contact Form -->
+            <div class="col-lg-7 p-5">
 
-                    <form id="contactForm"
-                        action="https://api.web3forms.com/submit"
-                        method="POST">
+                <h3 class="fw-bold mb-4">
+                    <i class="bi bi-envelope-fill text-primary me-2"></i>
+                    Send a Message
+                </h3>
 
-                        <input type="hidden"
-                            name="access_key"
-                            value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
+                <form id="contactForm"
+                      action="https://api.web3forms.com/submit"
+                      method="POST">
 
-                        <input type="checkbox"
-                            name="botcheck"
-                            class="d-none">
+                    <input type="hidden"
+                           name="access_key"
+                           value="cacb0ab4-2974-4b6c-adba-6726798ad8b8">
 
-                            <input class="form-control"
-                            id="subject"
-                            name="subject"
-                            type="text"
-                            placeholder="Subject"
-                            required>
+                    <input type="checkbox"
+                           name="botcheck"
+                           class="d-none">
 
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="name"
-                                name="name"
-                                type="text"
-                                placeholder="Your Name"
-                                required>
+                        <input class="form-control"
+                        id="subject"
+                        name="subject"
+                        type="text"
+                        placeholder="Subject"
+                        required>
 
-                            <label for="name">
-                                Full Name
-                            </label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control"
+                               id="name"
+                               name="name"
+                               type="text"
+                               placeholder="Your Name"
+                               required>
 
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="email"
-                                name="email"
-                                type="email"
-                                placeholder="name@example.com"
-                                required>
+                        <label for="name">
+                            Full Name
+                        </label>
+                    </div>
 
-                            <label for="email">
-                                Email Address
-                            </label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control"
+                               id="email"
+                               name="email"
+                               type="email"
+                               placeholder="name@example.com"
+                               required>
 
-                        <div class="form-floating mb-3">
-                            <input class="form-control"
-                                id="subject"
-                                name="custom_subject"
-                                type="text"
-                                placeholder="Subject"
-                                required>
+                        <label for="email">
+                            Email Address
+                        </label>
+                    </div>
 
-                            <label for="subject">
-                                Subject
-                            </label>
-                        </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control"
+                               id="subject"
+                               name="custom_subject"
+                               type="text"
+                               placeholder="Subject"
+                               required>
 
-                        <div class="form-floating mb-4">
-                            <textarea class="form-control"
-                                    id="message"
-                                    name="message"
-                                    placeholder="Message"
-                                    style="height:170px"
-                                    required></textarea>
+                        <label for="subject">
+                            Subject
+                        </label>
+                    </div>
 
-                            <label for="message">
-                                Your Message
-                            </label>
-                        </div>
+                    <div class="form-floating mb-4">
+                        <textarea class="form-control"
+                                  id="message"
+                                  name="message"
+                                  placeholder="Message"
+                                  style="height:170px"
+                                  required></textarea>
 
-                        <!-- Success Alert -->
-                        <div class="alert alert-success d-none"
-                            id="successMessage">
-                            <i class="bi bi-check-circle-fill me-2"></i>
-                            Thank you! Your message has been sent successfully.
-                        </div>
+                        <label for="message">
+                            Your Message
+                        </label>
+                    </div>
 
-                        <!-- Error Alert -->
-                        <div class="alert alert-danger d-none"
-                            id="errorMessage">
-                            <i class="bi bi-exclamation-circle-fill me-2"></i>
-                            Something went wrong. Please try again.
-                        </div>
+                    <!-- Success Alert -->
+                    <div class="alert alert-success d-none"
+                         id="successMessage">
+                        <i class="bi bi-check-circle-fill me-2"></i>
+                        Thank you! Your message has been sent successfully.
+                    </div>
 
-                        <button class="btn btn-primary btn-lg px-5"
-                                id="submitBtn"
-                                type="submit">
+                    <!-- Error Alert -->
+                    <div class="alert alert-danger d-none"
+                         id="errorMessage">
+                        <i class="bi bi-exclamation-circle-fill me-2"></i>
+                        Something went wrong. Please try again.
+                    </div>
 
-                            <span id="buttonText">
-                                Send Message
-                            </span>
+                    <button class="btn btn-primary btn-lg px-5"
+                            id="submitBtn"
+                            type="submit">
 
-                            <span id="spinner"
-                                class="spinner-border spinner-border-sm ms-2 d-none"
-                                role="status"></span>
+                        <span id="buttonText">
+                            Send Message
+                        </span>
 
-                        </button>
+                        <span id="spinner"
+                              class="spinner-border spinner-border-sm ms-2 d-none"
+                              role="status"></span>
 
-                    </form>
+                    </button>
 
-                </div>
-            </section>  
+                </form>
+
+            </div>
 
             <!-- Contact Information -->
             <div class="col-lg-5 bg-light border-start">
