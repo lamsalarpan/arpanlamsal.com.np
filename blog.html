@@ -17,37 +17,38 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <style>
-            .blog-card {
+            .blog-card-h {
                 transition: transform 0.2s ease, box-shadow 0.2s ease;
                 overflow: hidden;
             }
-            .blog-card:hover {
-                transform: translateY(-4px);
+            .blog-card-h:hover {
+                transform: translateY(-3px);
                 box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
             }
-            .blog-thumb {
-                height: 160px;
-                font-size: 2.75rem;
+            .blog-thumb-h {
+                min-height: 120px;
+                font-size: 2.25rem;
             }
-            .blog-title {
+            .blog-title-h {
                 font-size: 1.15rem;
                 font-weight: 700;
                 color: #212529;
                 line-height: 1.35;
+                margin-bottom: 0.5rem;
+            }
+            .blog-excerpt-h {
+                font-size: 0.9rem;
+                line-height: 1.5;
                 margin-bottom: 0.6rem;
                 display: -webkit-box;
                 -webkit-line-clamp: 2;
                 -webkit-box-orient: vertical;
                 overflow: hidden;
             }
-            .blog-excerpt {
-                font-size: 0.9rem;
-                line-height: 1.5;
-                margin-bottom: 0.9rem;
-                display: -webkit-box;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
-                overflow: hidden;
+            @media (min-width: 768px) {
+                .blog-thumb-h {
+                    font-size: 3rem;
+                }
             }
         </style>
     </head>
@@ -84,171 +85,221 @@
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <div class="row gx-4 gy-4">
 
-                    <!-- Post 1: AI -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b1.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #6f3ce6 100%);">
-                                    <i class="bi bi-cpu text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">Exploring the World of AI: The Future is Here</h2>
-                                    <p class="blog-excerpt text-muted">A look at what AI actually is, the difference between narrow and general AI, and where it's already changing healthcare, finance, and education.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #1e30f3 0%, #6f3ce6 100%);">
+                                            <i class="bi bi-cpu text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">Exploring the World of AI: The Future is Here</h2>
+                                            <p class="blog-excerpt-h text-muted">A look at what AI actually is, the difference between narrow and general AI, and where it's already changing healthcare, finance, and education.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 2: Smartphones -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b2.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #3c6ce6 0%, #1e30f3 100%);">
-                                    <i class="bi bi-phone text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">The Evolution of Smartphones</h2>
-                                    <p class="blog-excerpt text-muted">From simple devices to smart companions — tracing how phones evolved into the all-in-one tools we depend on every day.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #3c6ce6 0%, #1e30f3 100%);">
+                                            <i class="bi bi-phone text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">The Evolution of Smartphones</h2>
+                                            <p class="blog-excerpt-h text-muted">From simple devices to smart companions — tracing how phones evolved into the all-in-one tools we depend on every day.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 3: Web Dev Tips -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b3.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #1e30f3 100%);">
-                                    <i class="bi bi-code-slash text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Web Development</span>
-                                    <h2 class="blog-title">10 Essential Tips for Beginners in Web Development</h2>
-                                    <p class="blog-excerpt text-muted">From mastering HTML, CSS, and JS basics to building real projects — practical advice for anyone just starting out.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #e21e80 0%, #1e30f3 100%);">
+                                            <i class="bi bi-code-slash text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Web Development</span>
+                                            <h2 class="blog-title-h">10 Essential Tips for Beginners in Web Development</h2>
+                                            <p class="blog-excerpt-h text-muted">From mastering HTML, CSS, and JS basics to building real projects — practical advice for anyone just starting out.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 4: Graphic Design -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b4.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #6f3ce6 100%);">
-                                    <i class="bi bi-palette text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Design</span>
-                                    <h2 class="blog-title">The Art of Graphic Design: A Beginner's Guide</h2>
-                                    <p class="blog-excerpt text-muted">What graphic design actually involves, the core skills worth learning, and how to start building a portfolio from scratch.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #e21e80 0%, #6f3ce6 100%);">
+                                            <i class="bi bi-palette text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Design</span>
+                                            <h2 class="blog-title-h">The Art of Graphic Design: A Beginner's Guide</h2>
+                                            <p class="blog-excerpt-h text-muted">What graphic design actually involves, the core skills worth learning, and how to start building a portfolio from scratch.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 5: Freelancing -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b5.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #2470dc 100%);">
-                                    <i class="bi bi-briefcase text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Career</span>
-                                    <h2 class="blog-title">A Beginner's Guide to Freelancing</h2>
-                                    <p class="blog-excerpt text-muted">How to get started, build a portfolio, set rates, and manage clients — lessons from freelancing as a student.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #1e30f3 0%, #2470dc 100%);">
+                                            <i class="bi bi-briefcase text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Career</span>
+                                            <h2 class="blog-title-h">A Beginner's Guide to Freelancing</h2>
+                                            <p class="blog-excerpt-h text-muted">How to get started, build a portfolio, set rates, and manage clients — lessons from freelancing as a student.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 6: 5G -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b6.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #2470dc 0%, #6f3ce6 100%);">
-                                    <i class="bi bi-broadcast text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">The Future of 5G Technology and Its Impact</h2>
-                                    <p class="blog-excerpt text-muted">Faster speeds, lower latency, and what 5G means for healthcare, smart cities, gaming, and autonomous vehicles.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #2470dc 0%, #6f3ce6 100%);">
+                                            <i class="bi bi-broadcast text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">The Future of 5G Technology and Its Impact</h2>
+                                            <p class="blog-excerpt-h text-muted">Faster speeds, lower latency, and what 5G means for healthcare, smart cities, gaming, and autonomous vehicles.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 7: Cybersecurity -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b7.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #2470dc 100%);">
-                                    <i class="bi bi-shield-lock text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Security</span>
-                                    <h2 class="blog-title">The Importance of Cybersecurity in the Digital Age</h2>
-                                    <p class="blog-excerpt text-muted">Common cyber threats like phishing and ransomware, and practical steps anyone can take to stay protected online.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #e21e80 0%, #2470dc 100%);">
+                                            <i class="bi bi-shield-lock text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Security</span>
+                                            <h2 class="blog-title-h">The Importance of Cybersecurity in the Digital Age</h2>
+                                            <p class="blog-excerpt-h text-muted">Common cyber threats like phishing and ransomware, and practical steps anyone can take to stay protected online.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 8: Cloud Computing -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b8.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);">
-                                    <i class="bi bi-cloud text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">Cloud Computing: Revolutionizing Data Storage</h2>
-                                    <p class="blog-excerpt text-muted">How cloud computing works, why businesses are adopting it, and the trade-offs worth knowing about.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);">
+                                            <i class="bi bi-cloud text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">Cloud Computing: Revolutionizing Data Storage</h2>
+                                            <p class="blog-excerpt-h text-muted">How cloud computing works, why businesses are adopting it, and the trade-offs worth knowing about.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 9: Blockchain -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b9.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #6f3ce6 0%, #1e30f3 100%);">
-                                    <i class="bi bi-link-45deg text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">Blockchain Technology: Beyond Cryptocurrency</h2>
-                                    <p class="blog-excerpt text-muted">How blockchain works under the hood, and the industries — from healthcare to voting — it's quietly reshaping.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #6f3ce6 0%, #1e30f3 100%);">
+                                            <i class="bi bi-link-45deg text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">Blockchain Technology: Beyond Cryptocurrency</h2>
+                                            <p class="blog-excerpt-h text-muted">How blockchain works under the hood, and the industries — from healthcare to voting — it's quietly reshaping.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
                     </div>
 
-                    <!-- Post 10: Quantum Computing -->
-                    <div class="col-md-6 col-lg-6">
+                    <div class="col-12">
                         <a href="b10.html" class="text-decoration-none">
-                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
-                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #2470dc 0%, #1e30f3 100%);">
-                                    <i class="bi bi-atom text-white"></i>
-                                </div>
-                                <div class="card-body p-4">
-                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
-                                    <h2 class="blog-title">Quantum Computing: The Next Frontier</h2>
-                                    <p class="blog-excerpt text-muted">A beginner-friendly look at qubits, superposition, and why quantum computing could change everything from medicine to cryptography.</p>
-                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                            <div class="card shadow border-0 rounded-4 blog-card-h">
+                                <div class="row g-0 align-items-stretch">
+                                    <div class="col-4 col-md-3">
+                                        <div class="blog-thumb-h d-flex align-items-center justify-content-center h-100" style="background: linear-gradient(135deg, #2470dc 0%, #1e30f3 100%);">
+                                            <i class="bi bi-atom text-white"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col-8 col-md-9">
+                                        <div class="card-body p-3 p-md-4">
+                                            <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                            <h2 class="blog-title-h">Quantum Computing: The Next Frontier</h2>
+                                            <p class="blog-excerpt-h text-muted">A beginner-friendly look at qubits, superposition, and why quantum computing could change everything from medicine to cryptography.</p>
+                                            <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </a>
