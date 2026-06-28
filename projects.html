@@ -91,6 +91,18 @@
                     max-width: 100%;
                 }
             }
+            .btn-gradient {
+                background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);
+                border: none;
+                color: #fff;
+                transition: opacity 0.2s ease, transform 0.2s ease;
+            }
+            .btn-gradient:hover,
+            .btn-gradient:focus {
+                color: #fff;
+                opacity: 0.92;
+                transform: translateY(-1px);
+            }
         </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
@@ -129,10 +141,10 @@
                                     <h2 class="fw-bolder"><a href="https://github.com/lamsalarpan/Flappy-bird" target="_blank">Flappy Bird</a></h2>
                                     <p style="text-align: justify;">A browser-based recreation of the classic Flappy Bird game, built with plain HTML, CSS, and JavaScript. The bird is controlled with a key press or tap, flying between gaps in scrolling obstacles — the goal is simply to survive as long as possible without hitting one. It was a fun, quick project for practicing game logic like collision detection, gravity, and animation timing using nothing but vanilla JS.</p>
                                     <div class="d-flex flex-wrap gap-2 mt-2">
-                                        <button type="button" class="btn btn-outline-primary btn-sm js-open-demo" data-demo-target="demoFlappyBird">
+                                        <button type="button" class="btn btn-gradient btn-sm js-open-demo" data-demo-target="demoFlappyBird">
                                             <i class="bi bi-play-circle me-1"></i>View Live Demo
                                         </button>
-                                        <a class="btn btn-outline-primary btn-sm" href="https://github.com/lamsalarpan/Flappy-bird" target="_blank">
+                                        <a class="btn btn-gradient btn-sm" href="https://github.com/lamsalarpan/Flappy-bird" target="_blank">
                                             <i class="bi bi-github me-1"></i>View on GitHub
                                         </a>
                                     </div>
@@ -145,10 +157,10 @@
                                     <h2 class="fw-bolder"><a href="https://github.com/lamsalarpan/lamsalarpan.com.np" target="_blank">Portfolio Website</a></h2>
                                     <p style="text-align: justify;">An earlier personal portfolio site built with plain HTML, CSS, and JavaScript — covering an About page, Resume, Services, Portfolio, Blog, and Contact form, all tied together with a consistent design. It was my first real attempt at structuring a multi-page site from scratch before moving on to the Bootstrap-based version you're looking at now.</p>
                                     <div class="d-flex flex-wrap gap-2 mt-2">
-                                        <button type="button" class="btn btn-outline-primary btn-sm js-open-demo" data-demo-target="demoPortfolio">
+                                        <button type="button" class="btn btn-gradient btn-sm js-open-demo" data-demo-target="demoPortfolio">
                                             <i class="bi bi-play-circle me-1"></i>View Live Demo
                                         </button>
-                                        <a class="btn btn-outline-primary btn-sm" href="https://github.com/lamsalarpan/lamsalarpan.com.np" target="_blank">
+                                        <a class="btn btn-gradient btn-sm" href="https://github.com/lamsalarpan/lamsalarpan.com.np" target="_blank">
                                             <i class="bi bi-github me-1"></i>View on GitHub
                                         </a>
                                     </div>
