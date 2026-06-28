@@ -16,6 +16,40 @@
         <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.css" rel="stylesheet" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+        <style>
+            .blog-card {
+                transition: transform 0.2s ease, box-shadow 0.2s ease;
+                overflow: hidden;
+            }
+            .blog-card:hover {
+                transform: translateY(-4px);
+                box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.12) !important;
+            }
+            .blog-thumb {
+                height: 160px;
+                font-size: 2.75rem;
+            }
+            .blog-title {
+                font-size: 1.15rem;
+                font-weight: 700;
+                color: #212529;
+                line-height: 1.35;
+                margin-bottom: 0.6rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+            .blog-excerpt {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom: 0.9rem;
+                display: -webkit-box;
+                -webkit-line-clamp: 3;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+            }
+        </style>
     </head>
     <body class="d-flex flex-column h-100 bg-light">
              <main class="flex-shrink-0">
@@ -43,154 +77,184 @@
                 <div class="text-center mb-5">
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">
                         Blog</span></h1>
+                    <p class="text-muted mt-2">Thoughts and write-ups on tech, design, and what I'm learning along the way.</p>
                 </div>
-                <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
-                        <!-- blog Section-->
-                        <section>
-                              
-                    <!-- Project Card 1 -->
-                    <div class="card shadow border-0 rounded-4 mb-4">
-                        <div class="card-body p-4"> <!-- Reduced padding -->
-                            <div class="row align-items-center gx-0 gx-lg-5">
-                            <div class="col mb-4 mb-lg-0" style="text-align: justify;">
-                                    <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                        <a href="b1.html" style="text-decoration: none; color: blue;">The World of AI: The Future is Here.</a>
-                                    </h1>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
 
-                <section>
-                    <!-- Project Card 2 -->
-                    <div class="card shadow border-0 rounded-4 mb-4">
-                        <div class="card-body p-4"> <!-- Reduced padding -->
-                            <div class="row align-items-justify gx-5">
-                                <div class="col-lg-13 text-justify">
-                                    <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                        <a href="b2.html" style="text-decoration: none; color: blue;">The Evolution of Smartphones: From Simple Devices to Smart Companions.</a>
-                                    </h1>
+                <div class="row gx-4 gy-4 justify-content-center">
+
+                    <!-- Post 1: AI -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b1.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #6f3ce6 100%);">
+                                    <i class="bi bi-cpu text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">Exploring the World of AI: The Future is Here</h2>
+                                    <p class="blog-excerpt text-muted">A look at what AI actually is, the difference between narrow and general AI, and where it's already changing healthcare, finance, and education.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
                                 </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-                </section>
-               <section>
-                  <div class="card shadow border-0 rounded-4 mb-4">
-                     <div class="card-body p-4"> <!-- Reduced padding -->
-                         <div class="row align-items-justify gx-5">
-                             <div class="col-lg-11 text-justify">
-                                 <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                     <a href="b3.html" style="text-decoration: none; color: blue;">10 Essential Tips for Beginners in Web Development.</a>
-                                 </h1>
-                             </div>
-                         </div>
-                     </div>
-                 </div>
-             </section>
-             
-             <section>
-                 <!-- Project Card 1 -->
-                 <div class="card shadow border-0 rounded-4 mb-4">
-                     <div class="card-body p-4"> <!-- Reduced padding -->
-                         <div class="row align-items-justify gx-5">
-                             <div class="col-lg-11 text-justify">
-                                 <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                     <a href="b4.html" style="text-decoration: none; color: blue;">The Art of Graphic Design: A Beginner’s Guide.</a>
-                                 </h1>
-                             </div>
-                         </div>
-                     </div>
-                  </div>
-             </section>
-             
-              <section>
-                  <div class="card shadow border-0 rounded-4 mb-4">
-                     <div class="card-body p-4"> <!-- Reduced padding -->
-                         <div class="row align-items-justify gx-5">
-                             <div class="col-lg-11 text-justify">
-                                 <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                     <a href="b5.html" style="text-decoration: none; color: blue;">A Beginner's Guide to Freelancing: How to Get Started.</a>
-                                 </h1>
-                             </div>
-                         </div>
-                       </div>
-                 </div>
-              </section>
-              <section>
-                 <div class="card shadow border-0 rounded-4 mb-4">
-                     <div class="card-body p-4"> <!-- Reduced padding -->
-                         <div class="row align-items-justify gx-5">
-                             <div class="col-lg-11 text-justify">
-                                 <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                     <a href="b6.html" style="text-decoration: none; color: blue;">The Future of 5G Technology and Its Impact.</a>
-                                 </h1>
-                           </div>
-                        </div>
-                    </div>
-             </section>
-             <section>
-                <div class="card shadow border-0 rounded-4 mb-4">
-                    <div class="card-body p-4"> <!-- Reduced padding -->
-                        <div class="row align-items-justify gx-5">
-                            <div class="col-lg-11 text-justify">
-                                <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                    <a href="b7.html" style="text-decoration: none; color: blue;">The Importance of Cybersecurity in the Digital Age.</a>
-                                </h1>
+
+                    <!-- Post 2: Smartphones -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b2.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #3c6ce6 0%, #1e30f3 100%);">
+                                    <i class="bi bi-phone text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">The Evolution of Smartphones</h2>
+                                    <p class="blog-excerpt text-muted">From simple devices to smart companions — tracing how phones evolved into the all-in-one tools we depend on every day.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
                             </div>
-                        </div>
+                        </a>
                     </div>
-             </div>
-            </section>
-             <section>
-              <div class="card shadow border-0 rounded-4 mb-4">
-                <div class="card-body p-4"> <!-- Reduced padding -->
-                    <div class="row align-items-justify gx-5">
-                        <div class="col-lg-11 text-justify">
-                            <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                <a href="b8.html" style="text-decoration: none; color: blue;"> Cloud Computing: Revolutionizing the Way We Store and Access Data.</a>
-                            </h1>
-                        </div>
+
+                    <!-- Post 3: Web Dev Tips -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b3.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #1e30f3 100%);">
+                                    <i class="bi bi-code-slash text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Web Development</span>
+                                    <h2 class="blog-title">10 Essential Tips for Beginners in Web Development</h2>
+                                    <p class="blog-excerpt text-muted">From mastering HTML, CSS, and JS basics to building real projects — practical advice for anyone just starting out.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
                     </div>
+
+                    <!-- Post 4: Graphic Design -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b4.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #6f3ce6 100%);">
+                                    <i class="bi bi-palette text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Design</span>
+                                    <h2 class="blog-title">The Art of Graphic Design: A Beginner's Guide</h2>
+                                    <p class="blog-excerpt text-muted">What graphic design actually involves, the core skills worth learning, and how to start building a portfolio from scratch.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 5: Freelancing -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b5.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #2470dc 100%);">
+                                    <i class="bi bi-briefcase text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Career</span>
+                                    <h2 class="blog-title">A Beginner's Guide to Freelancing</h2>
+                                    <p class="blog-excerpt text-muted">How to get started, build a portfolio, set rates, and manage clients — lessons from freelancing as a student.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 6: 5G -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b6.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #2470dc 0%, #6f3ce6 100%);">
+                                    <i class="bi bi-broadcast text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">The Future of 5G Technology and Its Impact</h2>
+                                    <p class="blog-excerpt text-muted">Faster speeds, lower latency, and what 5G means for healthcare, smart cities, gaming, and autonomous vehicles.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 7: Cybersecurity -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b7.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #e21e80 0%, #2470dc 100%);">
+                                    <i class="bi bi-shield-lock text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Security</span>
+                                    <h2 class="blog-title">The Importance of Cybersecurity in the Digital Age</h2>
+                                    <p class="blog-excerpt text-muted">Common cyber threats like phishing and ransomware, and practical steps anyone can take to stay protected online.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 8: Cloud Computing -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b8.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #1e30f3 0%, #e21e80 100%);">
+                                    <i class="bi bi-cloud text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">Cloud Computing: Revolutionizing Data Storage</h2>
+                                    <p class="blog-excerpt text-muted">How cloud computing works, why businesses are adopting it, and the trade-offs worth knowing about.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 9: Blockchain -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b9.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #6f3ce6 0%, #1e30f3 100%);">
+                                    <i class="bi bi-link-45deg text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">Blockchain Technology: Beyond Cryptocurrency</h2>
+                                    <p class="blog-excerpt text-muted">How blockchain works under the hood, and the industries — from healthcare to voting — it's quietly reshaping.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Post 10: Quantum Computing -->
+                    <div class="col-md-6 col-lg-4">
+                        <a href="b10.html" class="text-decoration-none">
+                            <div class="card shadow border-0 rounded-4 h-100 blog-card">
+                                <div class="blog-thumb d-flex align-items-center justify-content-center" style="background: linear-gradient(135deg, #2470dc 0%, #1e30f3 100%);">
+                                    <i class="bi bi-atom text-white"></i>
+                                </div>
+                                <div class="card-body p-4">
+                                    <span class="badge bg-light text-primary fw-bold mb-2">Technology</span>
+                                    <h2 class="blog-title">Quantum Computing: The Next Frontier</h2>
+                                    <p class="blog-excerpt text-muted">A beginner-friendly look at qubits, superposition, and why quantum computing could change everything from medicine to cryptography.</p>
+                                    <span class="text-primary fw-bold small">Read more <i class="bi bi-arrow-right"></i></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
                 </div>
-             </div>
-            </section>
-             <section>
-                 <div class="card shadow border-0 rounded-4 mb-4">
-                    <div class="card-body p-4"> <!-- Reduced padding -->
-                        <div class="row align-items-justify gx-5">
-                            <div class="col-lg-11 text-justify">
-                                <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                    <a href="b9.html" style="text-decoration: none; color: blue;">Blockchain Technology: Beyond Cryptocurrency.</a>
-                                </h1>
-                            </div>
-                       </div>
-                   </div>
-                 </div>
-            </section>
-             <section>
-               <div class="card shadow border-0 rounded-4 mb-4">
-                  <div class="card-body p-4"> <!-- Reduced padding -->
-                      <div class="row align-items-justify gx-5">
-                          <div class="col-lg-11 text-justify">
-                              <h1 style="font-size: 1.5rem; line-height: 1.4; font-weight: 500;">
-                                  <a href="b10.html" style="text-decoration: none; color: blue;">Quantum Computing: The Next Frontier in Technology.</a>
-                              </h1>
-                          </div>
-                      </div>
-                  </div>
-               </div>
-         </section>
-         </div>
-           </div>
-           </section>
-            </section>
-        </div>
-    </div>
-</section>
- </main>
+            </div>
+        </main>
         <!-- Footer-->
 <footer class="bg-white py-4 mt-auto border-top">
     <div class="container px-5">
