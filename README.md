@@ -29,12 +29,12 @@ It showcases my **projects, skills, and experiences** as a student.
 ## 📂 Project Structure
 Portfolio-website/
 ├── index.html # 🏠 Home
-├──  /about # 📖 About
-├──  /gallery # 🖼️ Gallery
-├──  /resume # 📄 Resume
-├──  /projects # 💼 Projects
-├──  /blog # ✍️ Blog
-├──  /contact # ✉️ Contact
+├── https://arpanlamsal.com.np/about # 📖 About
+├── https://arpanlamsal.com.np/gallery # 🖼️ Gallery
+├── https://arpanlamsal.com.np/resume # 📄 Resume
+├── https://arpanlamsal.com.np/projects # 💼 Projects
+├── https://arpanlamsal.com.np/blog # ✍️ Blog
+├── https://arpanlamsal.com.np/contact # ✉️ Contact
 ├── social.html # 🌐 Social Media
 ├── css/ # 🎨 Stylesheets
 │ └── style.css
