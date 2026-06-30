@@ -5,7 +5,7 @@
 ![GitHub forks](https://img.shields.io/github/forks/lamsalarpan/Portfolio-website?style=social)
 
 This repository contains the source code of my **personal portfolio website** 👉 [arpanlamsal.com.np](https://arpanlamsal.com.np).  
-It showcases my **projects, skills, and experiences** as a student, programmer, and freelancer.  
+It showcases my **projects, skills, and experiences** as a student. 
 
 ---
 
