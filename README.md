@@ -29,12 +29,12 @@ It showcases my **projects, skills, and experiences** as a student, programmer, 
 ## 📂 Project Structure
 Portfolio-website/
 ├── index.html # 🏠 Home
-├── about.html # 📖 About
-├── gallery.html # 🖼️ Gallery
-├── resume.html # 📄 Resume
-├── projects.html # 💼 Projects
-├── blog.html # ✍️ Blog
-├── contact.html # ✉️ Contact
+├──  /about # 📖 About
+├──  /gallery # 🖼️ Gallery
+├──  /resume # 📄 Resume
+├──  /projects # 💼 Projects
+├──  /blog # ✍️ Blog
+├──  /contact # ✉️ Contact
 ├── social.html # 🌐 Social Media
 ├── css/ # 🎨 Stylesheets
 │ └── style.css
